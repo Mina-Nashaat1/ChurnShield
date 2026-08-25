@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChurnShield — Understand Why Customers Leave</title>
+  <meta name="description" content="ChurnShield is a customer-churn analytics product that helps businesses understand and prevent customer loss before it happens.">
+  <!-- Prevent flash of wrong direction -->
+  <script>(function(){var l=localStorage.getItem('cs-lang')||'en';document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.lang=l;})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="main-nav">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">ChurnShield</a>
+
+      <div class="navbar__right">
+        <div class="nav-links" id="nav-links">
+          <a href="dashboard.html" class="nav-link" data-i18n="nav.dashboard">Dashboard</a>
+          <a href="recommendations.html" class="nav-link" data-i18n="nav.recommendations">Recommendations</a>
+        </div>
+
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-globe">🌐</span>
+          <span id="lang-label">AR</span>
+        </button>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero-eyebrow" data-i18n="hero.eyebrow">Customer Churn Analytics</div>
+
+        <!-- Brand name stays in English/Latin at all times -->
+        <h1>Churn<span>Shield</span></h1>
+
+        <p class="hero__tagline" data-i18n="hero.tagline">
+          Understand why customers leave&nbsp;— before they do.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="dashboard.html" class="btn btn-primary">
+            <span data-i18n="hero.cta.primary">View Dashboard</span>
+            <span data-i18n="arrow.right">→</span>
+          </a>
+          <a href="recommendations.html" class="btn btn-ghost" data-i18n="hero.cta.secondary">
+            See Recommendations
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KPIs ==================== -->
+    <section class="kpi-section">
+      <div class="container">
+        <div class="section-label" data-i18n="section.metrics">Key Metrics</div>
+        <div class="kpi-grid">
+
+          <div class="kpi-card">
+            <div class="kpi-icon">👥</div>
+            <div class="kpi-label" data-i18n="kpi.customers">Total Customers</div>
+            <div class="kpi-value kpi-animate" data-target="7043" data-final-text="7,043">0</div>
+            <div class="kpi-bar"><div class="kpi-bar-fill" data-width="72"></div></div>
+          </div>
+
+          <div class="kpi-card danger">
+            <div class="kpi-icon">📉</div>
+            <div class="kpi-label" data-i18n="kpi.revenue">Revenue Lost to Churn</div>
+            <div class="kpi-value kpi-animate" data-target="139130" data-currency="true" data-final-text="$139.13K">$0</div>
+            <div class="kpi-bar"><div class="kpi-bar-fill" data-width="88"></div></div>
+          </div>
+
+          <div class="kpi-card danger">
+            <div class="kpi-icon">⚠️</div>
+            <div class="kpi-label" data-i18n="kpi.churnrate">Churn Rate</div>
+            <div class="kpi-value kpi-animate" data-target="27" data-suffix="%" data-final-text="27%">0%</div>
+            <div class="kpi-bar"><div class="kpi-bar-fill" data-width="27"></div></div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon">💎</div>
+            <div class="kpi-label" data-i18n="kpi.cltv">Avg Customer LTV</div>
+            <div class="kpi-value kpi-animate" data-target="4400" data-final-text="4,400">0</div>
+            <div class="kpi-bar"><div class="kpi-bar-fill" data-width="55"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NAV CARDS ==================== -->
+    <section class="nav-cards-section">
+      <div class="container">
+        <div class="section-label" data-i18n="section.explore">Explore</div>
+        <div class="nav-card-grid">
+
+          <a href="dashboard.html" class="nav-card">
+            <div class="nav-card__icon">📊</div>
+            <div class="nav-card__title" data-i18n="navcard.dashboard.title">Churn Dashboard</div>
+            <div class="nav-card__desc" data-i18n="navcard.dashboard.desc">
+              Explore contract types, payment methods, top churn reasons, and geographic distribution across the customer base.
+            </div>
+            <div class="nav-card__arrow">
+              <span data-i18n="navcard.dashboard.arrow">Open Dashboard</span>
+              <span data-i18n="arrow.right">→</span>
+            </div>
+          </a>
+
+          <a href="recommendations.html" class="nav-card">
+            <div class="nav-card__icon">🎯</div>
+            <div class="nav-card__title" data-i18n="navcard.recs.title">Strategic Recommendations</div>
+            <div class="nav-card__desc" data-i18n="navcard.recs.desc">
+              Four data-backed initiatives to reduce churn and recover retained revenue, ranked by expected business impact.
+            </div>
+            <div class="nav-card__arrow">
+              <span data-i18n="navcard.recs.arrow">See Recommendations</span>
+              <span data-i18n="arrow.right">→</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.text">ChurnShield &mdash; Customer Churn Analytics &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

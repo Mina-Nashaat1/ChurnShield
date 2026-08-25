@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendations — ChurnShield</title>
+  <meta name="description" content="Four data-backed recommendations to reduce churn and recover retained revenue, ranked by expected impact.">
+  <!-- Prevent flash of wrong direction -->
+  <script>(function(){var l=localStorage.getItem('cs-lang')||'en';document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.lang=l;})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="main-nav">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">ChurnShield</a>
+
+      <div class="navbar__right">
+        <div class="nav-links" id="nav-links">
+          <a href="dashboard.html" class="nav-link" data-i18n="nav.dashboard">Dashboard</a>
+          <a href="recommendations.html" class="nav-link" data-i18n="nav.recommendations">Recommendations</a>
+        </div>
+
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-globe">🌐</span>
+          <span id="lang-label">AR</span>
+        </button>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="hero-eyebrow" data-i18n="page.recs.eyebrow">Data-Backed Actions</div>
+        <h1 data-i18n="page.recs.title">Strategic Recommendations</h1>
+        <p class="page-hero__sub" data-i18n="page.recs.sub">
+          Four data-backed initiatives to reduce churn and grow retained revenue, ranked by expected impact.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== RECOMMENDATIONS ==================== -->
+    <section class="rec-section">
+      <div class="container">
+
+        <!-- Revenue impact banner -->
+        <div class="impact-banner">
+          <div class="impact-banner__amount">$139,131 / month</div>
+          <p class="impact-banner__label" data-i18n="banner.label">
+            Revenue currently lost to churn — the addressable opportunity for these initiatives.
+          </p>
+        </div>
+
+        <div class="rec-list">
+
+          <!-- ── Rec 01 ── -->
+          <div class="rec-card">
+            <div class="rec-card__head">
+              <div class="rec-num">01</div>
+              <div class="rec-card__meta">
+                <h2 class="rec-card__title" data-i18n="rec1.title">Redesign the contract incentive structure</h2>
+                <span class="impact-pill impact-high" data-i18n="impact.high">High Impact</span>
+              </div>
+            </div>
+            <div class="rec-finding" data-i18n="rec1.finding">
+              Month-to-month customers churn at 42.7%, vs 11.3% for one-year and 2.8% for two-year contracts.
+            </div>
+            <p class="rec-body" data-i18n="rec1.body">
+              Customers on flexible, low-commitment plans have dramatically higher churn risk. Structuring meaningful incentives to move them to longer-term contracts addresses this gap directly.
+            </p>
+            <div>
+              <div class="rec-actions-label" data-i18n="actions.label">Recommended Actions</div>
+              <ul class="rec-actions-list">
+                <li data-i18n="rec1.a1">Offer a meaningful discount for switching to annual billing</li>
+                <li data-i18n="rec1.a2">Target month-to-month customers past their 6-month mark with an upgrade offer</li>
+                <li data-i18n="rec1.a3">Test a price-lock guarantee for two-year contracts to boost conversion</li>
+              </ul>
+            </div>
+            <div class="rec-effect">
+              <strong data-i18n="rec.effect.label">Expected effect:</strong>
+              <span data-i18n="rec1.effect">Shifting even 15% of month-to-month customers to annual contracts could cut overall churn by several points.</span>
+            </div>
+          </div>
+
+          <!-- ── Rec 02 ── -->
+          <div class="rec-card">
+            <div class="rec-card__head">
+              <div class="rec-num">02</div>
+              <div class="rec-card__meta">
+                <h2 class="rec-card__title" data-i18n="rec2.title">Fix the support experience, not just the product</h2>
+                <span class="impact-pill impact-high" data-i18n="impact.high">High Impact</span>
+              </div>
+            </div>
+            <div class="rec-finding" data-i18n="rec2.finding">
+              "Attitude of support person" is the single most cited churn reason — ahead of price or competitor offers.
+            </div>
+            <p class="rec-body" data-i18n="rec2.body">
+              Customer service interactions are actively driving cancellations. This is a high-leverage fix because it can be acted on immediately without product changes or pricing adjustments.
+            </p>
+            <div>
+              <div class="rec-actions-label" data-i18n="actions.label">Recommended Actions</div>
+              <ul class="rec-actions-list">
+                <li data-i18n="rec2.a1">Audit support call quality specifically for the highest-churn customer segment</li>
+                <li data-i18n="rec2.a2">Introduce a retention-focused escalation path before cancellation is finalized</li>
+                <li data-i18n="rec2.a3">Track support satisfaction separately from overall CSAT to catch signal early</li>
+              </ul>
+            </div>
+            <div class="rec-effect">
+              <strong data-i18n="rec.effect.label">Expected effect:</strong>
+              <span data-i18n="rec2.effect">Directly addresses the top voluntary churn reason, independent of pricing changes.</span>
+            </div>
+          </div>
+
+          <!-- ── Rec 03 ── -->
+          <div class="rec-card">
+            <div class="rec-card__head">
+              <div class="rec-num">03</div>
+              <div class="rec-card__meta">
+                <h2 class="rec-card__title" data-i18n="rec3.title">Migrate customers off manual payment methods</h2>
+                <span class="impact-pill impact-medium" data-i18n="impact.medium">Medium Impact</span>
+              </div>
+            </div>
+            <div class="rec-finding" data-i18n="rec3.finding">
+              Electronic check users churn at 45.3% — nearly 3&times; higher than automatic bank transfer (16.7%) or credit card (15.2%).
+            </div>
+            <p class="rec-body" data-i18n="rec3.body">
+              Friction in the billing process correlates strongly with disengagement and churn. Autopay creates "stickiness" by reducing manual renewal decisions and payment failures.
+            </p>
+            <div>
+              <div class="rec-actions-label" data-i18n="actions.label">Recommended Actions</div>
+              <ul class="rec-actions-list">
+                <li data-i18n="rec3.a1">Offer a one-time bill credit for switching to autopay</li>
+                <li data-i18n="rec3.a2">Make autopay the default option at signup and renewal</li>
+                <li data-i18n="rec3.a3">Flag electronic-check customers for proactive outreach ahead of renewal dates</li>
+              </ul>
+            </div>
+            <div class="rec-effect">
+              <strong data-i18n="rec.effect.label">Expected effect:</strong>
+              <span data-i18n="rec3.effect">An easy, low-cost lever compared to pricing or contract restructuring.</span>
+            </div>
+          </div>
+
+          <!-- ── Rec 04 ── -->
+          <div class="rec-card">
+            <div class="rec-card__head">
+              <div class="rec-num">04</div>
+              <div class="rec-card__meta">
+                <h2 class="rec-card__title" data-i18n="rec4.title">Bundle retention-driving add-ons into base plans</h2>
+                <span class="impact-pill impact-medium" data-i18n="impact.medium">Medium Impact</span>
+              </div>
+            </div>
+            <div class="rec-finding" data-i18n="rec4.finding">
+              Customers without Tech Support churn at 41.6%, vs 15.2% for those who have it — the same pattern holds for Online Security.
+            </div>
+            <p class="rec-body" data-i18n="rec4.body">
+              Value-added services like Tech Support and Online Security create genuine product dependency and perceived protection. Getting them into customers' hands early is a cost-effective retention strategy.
+            </p>
+            <div>
+              <div class="rec-actions-label" data-i18n="actions.label">Recommended Actions</div>
+              <ul class="rec-actions-list">
+                <li data-i18n="rec4.a1">Free 3-month trial of Tech Support and Online Security for all new signups</li>
+                <li data-i18n="rec4.a2">Reframe add-ons as "protection" features in all marketing and onboarding materials</li>
+                <li data-i18n="rec4.a3">Prioritize add-on activation campaigns for the highest-risk customer segments</li>
+              </ul>
+            </div>
+            <div class="rec-effect">
+              <strong data-i18n="rec.effect.label">Expected effect:</strong>
+              <span data-i18n="rec4.effect">One of the most cost-effective retention levers identified in this analysis.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.text">ChurnShield &mdash; Customer Churn Analytics &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

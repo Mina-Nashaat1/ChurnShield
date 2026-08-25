@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — ChurnShield</title>
+  <meta name="description" content="Interactive churn analysis dashboard: contract type, payment method, churn reasons, and geographic distribution.">
+  <!-- Prevent flash of wrong direction -->
+  <script>(function(){var l=localStorage.getItem('cs-lang')||'en';document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.lang=l;})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="main-nav">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">ChurnShield</a>
+
+      <div class="navbar__right">
+        <div class="nav-links" id="nav-links">
+          <a href="dashboard.html" class="nav-link" data-i18n="nav.dashboard">Dashboard</a>
+          <a href="recommendations.html" class="nav-link" data-i18n="nav.recommendations">Recommendations</a>
+        </div>
+
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-globe">🌐</span>
+          <span id="lang-label">AR</span>
+        </button>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="hero-eyebrow" data-i18n="page.dash.eyebrow">Interactive Analysis</div>
+        <h1 data-i18n="page.dash.title">Churn Analysis Dashboard</h1>
+        <p class="page-hero__sub" data-i18n="page.dash.sub">
+          Explore contract type, payment method, churn reasons, and geographic distribution across the customer base.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section class="gallery-section">
+      <div class="container">
+
+        <!-- Tab controls -->
+        <div class="tab-row">
+          <div class="tab-pill-group">
+            <button
+              id="tab-home"
+              class="tab-btn active"
+              data-image="home.png"
+              data-caption="Product landing page with navigation to both analysis views"
+              data-caption-key="caption.home"
+              data-url="churnshield.io/home"
+              data-i18n="tab.home">
+              Home
+            </button>
+            <button
+              id="tab-churn"
+              class="tab-btn"
+              data-image="churn_overview.png"
+              data-caption="Contract type, payment method, and top churn reasons"
+              data-caption-key="caption.churn"
+              data-url="churnshield.io/churn-overview"
+              data-i18n="tab.churn">
+              Churn Overview
+            </button>
+            <button
+              id="tab-geo"
+              class="tab-btn"
+              data-image="geographic_insights.png"
+              data-caption="Churn concentration by city across California"
+              data-caption-key="caption.geo"
+              data-url="churnshield.io/geographic-insights"
+              data-i18n="tab.geo">
+              Geographic Insights
+            </button>
+          </div>
+        </div>
+
+        <!-- Browser device frame -->
+        <div class="device-frame">
+          <div class="device-frame__bar">
+            <div class="device-dots">
+              <span class="d-red"></span>
+              <span class="d-yellow"></span>
+              <span class="d-green"></span>
+            </div>
+            <div class="device-url-bar">
+              <span id="url-display">churnshield.io/home</span>
+            </div>
+          </div>
+          <div class="device-frame__screen">
+            <div class="gallery-skeleton" id="gallery-skeleton"></div>
+            <img
+              id="dashboard-image"
+              class="gallery-img"
+              src="home.png"
+              alt="Dashboard view">
+          </div>
+        </div>
+
+        <p class="gallery-caption" id="dashboard-caption">
+          Product landing page with navigation to both analysis views
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.text">ChurnShield &mdash; Customer Churn Analytics &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
